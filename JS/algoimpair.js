@@ -23,7 +23,7 @@ document.getElementById("essaidate").addEventListener("click", displayDate);
 
 
                             //algo siage//
-function siage() {
+function tranchage() {
               let age;
               age = Number(document.getElementById("form").value);
               if(age < 18)

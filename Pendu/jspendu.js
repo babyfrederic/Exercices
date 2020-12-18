@@ -1,5 +1,5 @@
 let lettres ="abcdefghijklmnopqrstuvwxyz".split("");
-let mots = ["baby", "fred", "stage"]
+let mots = ["baby", "perdu", "stage","joli","cheval","terre","simple"]
 let buttons = document.querySelector("#buttons");
 let motADeviner = mots[Math.floor(Math.random() * mots.length)]
 
@@ -36,7 +36,7 @@ for( let i =0 ; i<lettres.length ; i ++){
                 imagePendu.style.backgroundPosition = "-" + perdu * 250 + "px"
                 console.log()
             } else {
-                alert("Vous avez perdu")
+                alert("Vous avez perdu, il fallait trouver : "+ motADeviner)
             }
         }
     }

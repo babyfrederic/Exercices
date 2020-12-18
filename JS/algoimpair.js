@@ -51,6 +51,6 @@ document.getElementById("form1").addEventListener("click", siage);
 
                             //bouton rafraichir//
 function reset() {
-       window.location.href = "algoimpair.html"
+       window.location.href = "algoexo.html"
 }
-document.getElementById("rafraichir").addEventListener("click", reset);
+document.getElementById("refresh").addEventListener("click", reset);

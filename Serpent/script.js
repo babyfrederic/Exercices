@@ -1,10 +1,10 @@
 window.onload = function()
 {
-    var canvasWidth = 900;
-    var canvasHeight = 600;
+    var canvasWidth = 700;
+    var canvasHeight = 500;
     var blockSize = 30; 
     var ctx;
-    var delay = 100;
+    var delay = 120;
     var snakee;
     var applee;
     var widthInBlocks = canvasWidth/blockSize;
@@ -19,14 +19,14 @@ window.onload = function()
         var canvas = document.createElement('canvas');
         canvas.width = canvasWidth;
         canvas.height = canvasHeight;
-        canvas.style.border = "30px solid gray"; 
-        canvas.style.margin = "50px auto";
+        canvas.style.border = "5px solid grey"; 
+        canvas.style.margin = "25px auto";
         canvas.style.display = "block";
-        canvas.style.backgroundColor = "#11111";
+        canvas.style.backgroundColor = "#F2DA74";
         document.body.appendChild(canvas);
         ctx = canvas.getContext('2d');
         snakee = new Snake([[6,4], [5,4], [4,4],[3,4],[2,4]], "right");
-        applee = new Apple([10,10]);
+        applee = new Apple([17,12]);
         score = 0;
         refreshCanvas();
 
@@ -57,10 +57,10 @@ window.onload = function()
     function gameOver(){
         ctx.save();
         ctx.font = "bold 70px sans-serif";
-        ctx.fillStyle = "#666";
+        ctx.fillStyle = "#BDBDBD";
         ctx.textAlign = "center";
         ctx.textBaseline = "middle";
-        ctx.strokeStyle = "#1234";
+        ctx.strokeStyle = "#585858";
         ctx.lineWidth = 5;
         var centreX = canvasWidth / 2;
         var centreY = canvasHeight / 2;
@@ -103,7 +103,7 @@ window.onload = function()
         this.draw = function(){
 
             ctx.save();
-            ctx.fillStyle = "#14567"; 
+            ctx.fillStyle = "#80FF00"; 
             for(var i = 0 ; i < this.body.length; i++){
                 drawBlock(ctx, this.body[i]);
             }
@@ -192,7 +192,7 @@ window.onload = function()
         this.position = position;
         this.draw = function(){
             ctx.save();
-            ctx.fillsStyle = "#22222";
+            ctx.fillsStyle = "#FF0000";
             ctx.beginPath();
             var radius = blockSize/2;
             var x = this.position[0]*blockSize + radius; 

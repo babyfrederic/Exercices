@@ -18,7 +18,7 @@ body {
   box-shadow: 0px 22px 60px 0 black;
 }
 
-#myInput, #myInput1, #essaidate, #rafraichir, #form, #form1 {
+#myInput, #myInput1,#myInput2 #myInput3, #myInput4, #tranchage, #refresh, #form, #form1 {
   background-color: #726ea7; 
   border: none;
   border-radius: 5px;
@@ -48,19 +48,20 @@ body {
   }
 
 #myInput:hover {
-  box-shadow: 0px 22px 60px 0 black;
+  box-shadow: 10px 22px 40px 0 black;
   } 
 
 #myInput1:hover {
-  box-shadow: 0px 22px 60px 0 black; 
+  box-shadow: 0px 22px 20px 0 black; 
   } 
-
-#essaidate:hover {
-  box-shadow: 0px 22px 60px 0 black;
-  }
-
-#rafraichir:hover {
-  box-shadow: 0px 22px 60px 0 black;  
+#myInput3:hover {
+    box-shadow: 0px 22px 20px 0 black; 
+    }    
+#myInput4:hover {
+    box-shadow: 0px 22px 20px 0 black; 
+    } 
+#refresh:hover {
+  box-shadow: 0px 22px 50px 0 rgb(14, 9, 9);  
   }
 
 #form:hover {

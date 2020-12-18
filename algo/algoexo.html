@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="..\CSS\algoimpair.css" type="text/css">
-    <script async src="..\js\algoimpair.js"></script>
+    <link rel="stylesheet" href="algoexo.css" type="text/css">
+    
     <title>algor</title>
 </head>
 <body>
@@ -38,20 +38,34 @@
             <h2>Exo 3 : Algorithme multi </h2>
             <h4></h4>
             <br>
-            <h3>Enter table :</h3>
+            <h3 id="table">Entrer début table :</h3>
             </p> 
-            <input id="form">
-            <button id="form1">Valider</button>
-            <p id="demo3">Réponse</p>
+            <input id="myinput3">
+            <h3>Nombre d'iterations :</h3>
+            </p> 
+            <input id="myinput4">
 
-<!-- systeme pour Rafraichir -->
+            <button id="multi">Valider</button>
+            <p id="result"></p>
+            <p id="demo4">Résultats </p>
+            <p id="demo5">Total</p>
 
-            <button id="refresh">Rafraichir</button>
+<!-- systeme pour Rafraichir fin rafraichir             -->
+            </p>
+            <button id="refresh"> Effacer </button>
             <br>
 
-<!-- fin rafraichir             -->
+            >
+            <p id = "demo2" > </p>
+            <script>
+            document.getElementById("demo2").innerHTML = 
+            "Page hostname est : " + window.location.hostname;
+            </script>
+            
+            </body>
 
 
     </div>
-
+    <script  src="algoexo.js"></script>
+</body>
 </html>

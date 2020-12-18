@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./CSS/jeudevinCSS.css" />
+        <script async src="../JS/jeudevinJS.js"></script>
+        <link rel="stylesheet" href="..\CSS\algoexo.css" type="text/css">
+        <script async src="..\js\algoexo.js"></script>
+        <title>Exo</title>
+    </head>
+
+    <body>
+<!-- /**** exo1 ****/ -->
+    <div class="page">
+      <script>
+          var somme = 0;
+          var compteur = 0;
+          var moyenne = 0;
+          var min = 0;
+          var max = 0;
+
+          var nombre = parseInt(prompt("Entrez Un Nombre Positif(0 pour annuler): "));
+
+          while (nombre !=0) {
+            if (nombre < min) {
+              min = nombre;
+            }
+            if (nombre > max) {
+              max = nombre;
+            }
+
+            compteur = compteur++ + 1;
+            somme = nombre++ + somme;
+            moyenne = somme / compteur;
+            nombre = parseInt(prompt("Entrez Un Nombre Positif(0 pour annuler): "));
+          }
+          document.getElementById("nombre_entier").innerHTML = somme;
+          document.getElementById("min").innerHTML = min;
+          document.getElementById("max").innerHTML = max;
+          document.getElementById("moyenne").innerHTML = moyenne;
+          </script>
+      </div>
+  </body>
+</html>

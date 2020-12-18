@@ -1,0 +1,19 @@
+body {
+    background-color: cadetblue;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif, sans-serif;
+}
+
+.page {
+  background-color: #2a6cc2; 
+  border: none;
+  border-radius: 15px;
+  color: white;
+  padding: 25px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  box-shadow: 0px 22px 60px 0 rgb(15, 70, 31);
+}

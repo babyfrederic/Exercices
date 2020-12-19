@@ -1,10 +1,8 @@
 //algo pair impair//
-// Pour effectuer un add event listener c'est à dire que tu écoute l'evenement du click dans ce cas tu dois ecouter le click du bouton donc le recupérer puis tu fait ecouter levenement
-// donc le "click" puis tu active la fonction dans le cas présent c'est ()=> une fonction anonyme est fléché () => {} donne fonction () {}
 let input = document.getElementById("myInput1");
 
 input.addEventListener("click", ()=>{
-    let nbr=  Number(document.getElementById("myInput").value);
+    let nbr=  Number(document.getElementById("myexoInput").value);
  
     let demo = document.getElementById("demo");
   
@@ -55,19 +53,20 @@ form.addEventListener("click", () => {
         let a = Number(document.getElementById("myinput3").value);
         let b = Number(document.getElementById("myinput4").value);
         let reponse = document.getElementById("demo4");
-   //   let reponsetotal = document.getElementById("demo5");
+   //     let reponsetotal = document.getElementById("demoT");
 
         
         for(var i=1;i<=b;i++)  {
             let resultat = a*i;
-    // let resultattotal = resultattotal + resultat; 
+        // let resultattotal =+ resultattotal + resultat; 
             reponse.innerHTML += (" "+a+" x "+i+" = "+resultat);   
          }
-    // reponsetotal.innerHTML += (" total  = "+resultattotal);  
+        //   reponsetotal.innerHTML += (" total  = "+ resultattotal);  
     })
 //bouton effacer//
+
 function reset() 
     {
-        window.location.href="algoexo.html";
+        window.location.href="../algo/algoexo.html";
     }
-    
+    document.getElementById("refresh").addEventListener("click", reset);    

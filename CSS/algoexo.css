@@ -18,7 +18,7 @@ body {
   box-shadow: 0px 22px 60px 0 black;
 }
 
-#myInput, #myInput1,#myInput2 #myInput3, #myInput4, #tranchage, #refresh, #form, #form1 {
+#myInput,,#myinputx #myexoinput, #myInput1,#myInput2 #myInput3, #myInput4,#myinput5, #tranchage, #refresh, #form, #form1 #formx{
   background-color: #726ea7; 
   border: none;
   border-radius: 5px;
@@ -34,7 +34,7 @@ body {
   transition-duration: 0.4s;
   }
 
-#demo, #demo2, #demo3, #demo4 {
+#demo, #demo2, #demo3, #demo4,#demo5,#demox {
   margin-top: 30px;
   background-color: #6aa3b9; 
   border: none;

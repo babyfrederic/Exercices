@@ -18,7 +18,7 @@ body {
   box-shadow: 0px 22px 60px 0 black;
 }
 
-#myInput,#myinputx, #myexoinput, #myInput1,#myInput2, #myinput3, #myinput4,#myinput5, #tranchage, #refresh, #form, #form1, #formx{
+#myInput, #myinputx, #myexoinput, #myInput1, #myInput2, #myInput3, #myInput4, #myinput5, #tranchage, #refresh, #form, #form1, #formx{
   background-color: #726ea7; 
   border: none;
   border-radius: 5px;

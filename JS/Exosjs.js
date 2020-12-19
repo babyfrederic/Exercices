@@ -1,18 +1,20 @@
 // JS des Exercices)
 // JS Exo5
-let input = document.getElementById("myInputx");
+let inputa = document.getElementById("myInputx");
 fact =1 ;
-input.addEventListener("click", ()=>{
+inputa.addEventListener("click", ()=>{
     let nbr=  Number(document.getElementById("formx").value);
- 
-while nbr>1 {
+    let reponsefacto = document.getElementById("demox");
+while (nbr > 1) {
     
-    facoriel = factoriel * nbr ;
-    nb = nb -1;
-    let demo = document.getElementById("demox");
+    facoriel =+ factoriel * nbr ;
+    nbr = nbr - 1;
+    reponsefacto.innerHTML += ("Factoriel  "+ factoriel +" de "+nbr);
+    }
 }
-function efface() 
+function reset() 
     {
         window.location.href="../file/Exo5.html";
     }
-    document.getElementById("effacer").addEventListener("click", efface);  
+    document.getElementById("effacer").addEventListener("click", reset) 
+

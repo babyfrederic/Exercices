@@ -18,7 +18,7 @@ body {
   box-shadow: 0px 22px 60px 0 black;
 }
 
-#myInput, #myinputx, #myexoinput, #myInput1, #myInput2, #myInput3, #myInput4, #myinput5, #tranchage, #refresh, #form, #form1, #formx{
+#a,#myInput,#myinputx, #myexoinput, #myInput1,#myInput2 #myInput3, #myInput4,#myinput5, #tranchage, #refresh, #effacer, #form, #form1,#form6, #form7,#form8, #form17, #form16, #formx{
   background-color: #726ea7; 
   border: none;
   border-radius: 5px;
@@ -34,7 +34,7 @@ body {
   transition-duration: 0.4s;
   }
 
-#demo, #demoT, #demo2, #demo3, #demo4,#demo5,#demox {
+#demo, #demo2, #demo3, #demo4,#demo5,#demox,#demo6,#demo7{
   margin-top: 30px;
   background-color: #6aa3b9; 
   border: none;
@@ -50,7 +50,12 @@ body {
 #myInput:hover {
   box-shadow: 10px 22px 40px 0 black;
   } 
-
+#myinputx:hover {
+    box-shadow: 10px 22px 40px 0 black;
+    } 
+#myexoinput:hover{
+  box-shadow: 10px 22px 40px 0 black;
+  } 
 #myInput1:hover {
   box-shadow: 0px 22px 20px 0 black; 
   } 
@@ -64,14 +69,31 @@ body {
   box-shadow: 0px 22px 50px 0 rgb(14, 9, 9);  
   }
 #effacer.hover {
-  box-shadow: 0px 22px 50px 0 rgb(14, 9, 9);
+  box-shadow: 0px 22px 50px 0 rgb(209, 24, 24);
   }
 
 #form:hover {
   box-shadow: 0px 22px 60px 0 black;
   }
-
+#formx:hover {
+    box-shadow: 0px 22px 60px 0 black;
+    }
 #form1:hover {
   box-shadow: 0px 22px 60px 0 black;
   }
-  
+  #form6:hover {
+  box-shadow: 0px 22px 60px 0 black;
+  }
+  #form7:hover {
+  box-shadow: 0px 22px 60px 0 rgb(59, 165, 197);
+  }
+  #form8:hover {
+    box-shadow: 0px 22px 60px 0 rgb(53, 203, 223);
+  }
+  #form16:hover {
+  box-shadow: 0px 22px 60px 0 black;
+  }
+  #form77:hover {
+  box-shadow: 0px 22px 60px 0 black;
+  }
+    

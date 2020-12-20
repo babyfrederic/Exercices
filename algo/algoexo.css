@@ -18,7 +18,7 @@ body {
   box-shadow: 0px 22px 60px 0 black;
 }
 
-#myInput, #myinputx, #myexoinput, #myInput1, #myInput2, #myInput3, #myInput4, #myinput5, #tranchage, #refresh, #form, #form1, #formx{
+#myInput, #myinputx, #myexoinput, #myinput1, #myInput2, #myInput3, #myInput4, #myinput5, #tranchage, #refresh, #form, #form1, #formx{
   background-color: #726ea7; 
   border: none;
   border-radius: 5px;
@@ -51,7 +51,7 @@ body {
   box-shadow: 10px 22px 40px 0 black;
   } 
 
-#myInput1:hover {
+#myinput1:hover {
   box-shadow: 0px 22px 20px 0 black; 
   } 
 #myInput3:hover {

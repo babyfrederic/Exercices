@@ -1,5 +1,5 @@
 //algo pair impair//
-let input = document.getElementById("myInput1");
+let input = document.getElementById("myinput1");
 
 input.addEventListener("click", ()=>{
     let nbr=  Number(document.getElementById("myexoinput").value);

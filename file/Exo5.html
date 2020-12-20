@@ -3,9 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="..\CSS\algoexo.css" type="text/css">
-    
-    <script async src="..\js\Exos.js"></script>
+    <link rel="stylesheet" href="..\CSS\algoexo.css" type="text/css">   
+    <script async src="..\JS\Exosjs.js"></script>
     <title>algor</title>
 </head>
 <body>
@@ -19,9 +18,20 @@
             <br>           
             <h3>Entrez un nombre et validez:</h3>
             <input id="myinputx">
-            <button id="formx">Valider</button>
+            <button onclick="facto()" id="a">Valider</button>
             <p id="demox">Réponse</p><br>
-
+            <script>
+                function facto()
+                {
+                var valeur = document.getElementById("myinputx").value;
+                var nb = valeur;
+                while (nb > 1) {
+                  valeur = valeur * (nb-1) ;
+                  nb = nb - 1;
+                  }
+                document.getElementById("demox").innerHTML = valeur;
+                }
+            </script>
 <!-- fin EXO 5 algo -->
 
  <!-- partie algo EXO 6-->
@@ -45,7 +55,7 @@
 </p> 
 <input id="form7">
 <input id="form8">
-<button id="form17">Valider</button>
+<button onclic="form17" ; id ="a">Valider</button>
 <br>
 <p id="demo7">Réponse</p>
 
@@ -55,5 +65,5 @@
             <button id="effacer"> Effacer</button>
             <br>
     </div>
-    <script  src="../JS/Exosjs.js"></script>
+    <script  src="..\JS\Exosjs.js"></script>
 </html>

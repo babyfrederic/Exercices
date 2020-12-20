@@ -13,12 +13,12 @@
 
 <!-- partie algo facto -->
 
-            <h2>Exo 5 : Algo. Factoriel de x</h2>
-            <br>           
-            <h3>Entrez un nombre et validez:</h3>
-            <input id="myinputx">
-            <button onclick="facto()" id="a">Valider</button>
-            <p id="demox">Réponse</p><br>
+<h2>Exo 5 : Algo. Factoriel de x</h2>
+<br>           
+<h3>Entrez un nombre et validez:</h3>
+<input id="myinputx">
+<button onclick="facto()" id="a">Valider</button>
+<p id="demox">Réponse</p><br>
 <!-- fin EXO 5 algo -->
 
  <!-- partie algo EXO 6-->
@@ -26,7 +26,7 @@
  <h2>Exo 6 : 100 Premiers nombres Impairs </h2>
  <h4></h4>
  <br>
- <h3>Entrez :(chiffre inferieur à 100)</h3>
+ <h3>Entrez : (chiffre inferieur à 100)</h3>
  </p> 
  <input id="form6">
  <button onclick="impairs()" id="a">Valider</button>
@@ -54,11 +54,12 @@
             <button onclick="reset()" id="a">Remise a zero</button>
             <br>
     </div>
+<!-- Debut des javascript -->
 
 <script>
     function facto()
     {
-    var valeur = document.getElementById("myinputx").value;
+    var valeur = (document.getElementById("myinputx").value);
     var nb = valeur;
     while (nb > 1) 
         {
@@ -69,23 +70,19 @@
     }
 
     function impairs()
-        {
-        var vale= (document.getElementById("form6").value);
-        var nbr = vale;
-        while (nbr < 100) 
-        {
-        if (0 == (nbr % 2))
+    {
+        var vale= Number(document.getElementById("form6").value);
+        
+        if (vale%2 == 0)
             {
-            nbr = nbr + 1;
-            vale = nbr; 
-            document.getElementById("demo6").innerHTML = vale;
+            document.getElementById("demo6").innerHTML += "Le nombre est pair";
             }
         else 
             {
-            document.getElementById("demo6").innerHTML = vale;
+            document.getElementById("demo6").innerHTML += "Le nombre est impair";
             }
         }
-    }
+
     function hypo() 
         {
         var C1 = (document.getElementById("form7").value);
@@ -103,6 +100,7 @@
     }
 
 </script>
+
 
 </body>
 

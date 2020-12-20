@@ -12,7 +12,7 @@ function verif(){
         document.getElementById("demo").innerHTML = x + " "+ nbr +" " + "nombre impair";
     }
     }
-    document.getElementById("myInput1").addEventListener("click", verif);
+    document.getElementById("myinput1").addEventListener("click", verif);
 
 //algo tranche age//
 function tranchage() 

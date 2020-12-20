@@ -1,4 +1,3 @@
-!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
@@ -20,20 +19,21 @@
             <input id="myinputx">
             <button onclick="facto()" id="a">Valider</button>
             <p id="demox">Réponse</p><br>
-
 <!-- fin EXO 5 algo -->
 
  <!-- partie algo EXO 6-->
-            <br><hr>
-            <h2>Exo 6 : 100 Premiers nombres Impairs </h2>
-            <h4></h4>
-            <br>
-            <h3>Entrez :</h3>
-            </p> 
-            <input id="form6">
-            <button onclick="impairs()" id="a">Valider</button>
-            <p id="demo6">Réponse</p>
-    
+ <br><hr>
+ <h2>Exo 6 : 100 Premiers nombres Impairs </h2>
+ <h4></h4>
+ <br>
+ <h3>Entrez :(chiffre inferieur à 100)</h3>
+ </p> 
+ <input id="form6">
+ <button onclick="impairs()" id="a">Valider</button>
+ <p id="demo6">Réponse</p>
+
+
+
 <!-- fin d'algo EXO 6 -->
 <!-- partie algo eXO 7 -->
 <br><hr>
@@ -54,5 +54,51 @@
             <button onclick="zeroexo()" id="a">Remise a zero</button>
             <br>
     </div>
+
+<script>
+    function facto()
+    {
+    var valeur = document.getElementById("myinputx").value;
+    var nb = valeur;
+    while (nb > 1) 
+        {
+        valeur = valeur * (nb-1) ;
+        nb = nb - 1;
+        }
+        document.getElementById("demox").innerHTML = valeur;
+    }
+
+    function impairs()
+        {
+        var vale= document.getElementById("form6").value;
+        var nbr = vale;
+        while (nbr < 100) 
+        {
+        if (0 == (nbr % 2))
+            {
+            nbr = nbr + 1;
+            vale = nbr; 
+            document.getElementById("demo6").innerHTML = vale;
+            }
+        else 
+            {
+            document.getElementById("demo6").innerHTML = vale;
+            }
+        }
+    }
+    function hypo() 
+        {
+        let C1 = Number(document.getElementById("form7").innerHTML.value);
+        let C2 = Number(document.getElementById("form8").innerHTML.value);
+        let C3 =  C1 * C1 + C2 * C2;
+        let C4 = Math.sqrt(C3);
+        document.getElementById("demo7").innerHTML=C4;
+    }
+
+
+</script>
+
+
+
     <script  src="..\JS\Exosjs.js"></script>
 </html>

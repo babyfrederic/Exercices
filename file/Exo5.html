@@ -3,8 +3,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="..\CSS\algoexo.css" type="text/css">   
-    <script async src="..\JS\Exosjs.js"></script>
-    <title>algor exos 5 à 7</title>
+  <!--  <script async src="..\JS\Exosjs.js"></script> -->
+    <title>algo exos 5 à 7</title>
 </head>
 <body>
     <li><a href="../index.html">Accueil</a></li>
@@ -51,7 +51,7 @@
 <!-- fin d'algo -->
 <!-- Effacer contenus -->
             <br><hr>
-            <button onclick="zeroexo()" id="a">Remise a zero</button>
+            <button onclick="reset()" id="a">Remise a zero</button>
             <br>
     </div>
 
@@ -70,7 +70,7 @@
 
     function impairs()
         {
-        var vale= document.getElementById("form6").value;
+        var vale= (document.getElementById("form6").value);
         var nbr = vale;
         while (nbr < 100) 
         {
@@ -88,17 +88,23 @@
     }
     function hypo() 
         {
-        let C1 = Number(document.getElementById("form7").innerHTML.value);
-        let C2 = Number(document.getElementById("form8").innerHTML.value);
-        let C3 =  C1 * C1 + C2 * C2;
-        let C4 = Math.sqrt(C3);
+        var C1 = (document.getElementById("form7").value);
+        var C2 = (document.getElementById("form8").value);
+        var C3 =  (C1 * C1) + (C2 * C2);
+        var C4 = Math.sqrt(C3);
         document.getElementById("demo7").innerHTML=C4;
     }
 
+    function reset() 
+    {
+        window.location.href="Exo5.html";
+    
+    document.getElementById("effacer").addEventListener("click", reset);
+    }
 
 </script>
 
+</body>
 
-
-    <script  src="..\JS\Exosjs.js"></script>
+<!--  <script  src="..\JS\Exosjs.js"></script> -->
 </html>

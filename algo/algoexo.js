@@ -2,7 +2,7 @@
 let input = document.getElementById("myInput1");
 
 input.addEventListener("click", ()=>{
-    let nbr=  Number(document.getElementById("myexoInput").value);
+    let nbr=  Number(document.getElementById("myexoinput").value);
  
     let demo = document.getElementById("demo");
   
